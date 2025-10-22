@@ -1,0 +1,34 @@
+*DataDrivenFrameWork: So basically Datadriven framework is nothing but it is driving the data from other sources the name itself it is saying that it is driven the
+data from some extrenal files like excel files or CSV files or anyother.
+
+* how we can fetch the data from excel file using Apachi poi librires ex: if i want to subitmit a form  with multiple set of data or I want to register in one 
+application with diff set of data in that case we storing the data in excel sheets and then we will fetch the data in our selenium script.
+
+* Datadriven approach is nothing but parametarization also
+
+Note: when we are doing any write operation in excel sheet that sheet should be in closed status  for Reading or fetching the data it is not required 
+
+
+* @dataprovider annotation is most papular annaotation in TestNG to fetch data from excel sheet i.e using dataprovider annotation we need to create method and pass
+the string variable in the method itself
+
+Note: Each and every annotation is followed one method
+
+
+PageObjectModel is an approach to write the test cases and its a designed pattern
+
+>> it will be intigrating with Datadroven frame work and TestNg annotation to write the testcases
+
+Lets assume that any application like ecommerce  in that application we have diff kind of pages are there ex: Loginpage,Homepage,Searchpage,Regpage,Addtocartpage...etc
+
+using POM we need to create a java class for each and every page  and then we can define webelements of respective pages and perform some Actions  these are called Page Library's
+
+and also its called as Object repository 
+
+TestBase.java it is a parent class of the all classes 
+
+
+
+
+
+
