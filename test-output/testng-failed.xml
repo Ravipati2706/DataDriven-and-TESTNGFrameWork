@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [TestNgAutomationSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="TestNG Features(failed)">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="emailid" value="test@yahoo.com"/>
-    <parameter name="env" value="QA"/>
-    <parameter name="url" value="https://login.yahoo.com/?.intl=in"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.Parametarization">
+      <class name="datgadriven.utility.Parametarization">
         <methods>
           <include name="Setup"/>
-          <include name="checksigninError"/>
+          <include name="Formfilling"/>
+          <include name="Teardown"/>
         </methods>
-      </class> <!-- com.test.Parametarization -->
+      </class> <!-- datgadriven.utility.Parametarization -->
     </classes>
-  </test> <!-- TestNG Features(failed) -->
-</suite> <!-- Failed suite [TestNgAutomationSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

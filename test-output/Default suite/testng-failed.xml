@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.Parametarization">
+      <class name="datgadriven.utility.Parametarization">
         <methods>
-          <include name="loginTest"/>
           <include name="Setup"/>
+          <include name="Formfilling"/>
           <include name="Teardown"/>
-          <include name="checksigninError"/>
         </methods>
-      </class> <!-- com.test.Parametarization -->
+      </class> <!-- datgadriven.utility.Parametarization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

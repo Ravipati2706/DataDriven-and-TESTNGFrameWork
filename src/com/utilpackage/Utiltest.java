@@ -1,7 +1,6 @@
 package com.utilpackage;
 
 import java.util.ArrayList;
-
 import datgadriven.utility.ExcelReader;
 
 public class Utiltest {
@@ -12,7 +11,7 @@ public class Utiltest {
 		
 		ArrayList<Object[]> mydata = new ArrayList<Object[]>();
 		try {
-			reader= new ExcelReader("C:\\Users\\Reddybabu\\eclipse-workspace\\TestNGandDatadrivenlearningbynaveen\\src\\com\\testdata\\From.xlsx");
+			reader= new ExcelReader("C:\\Users\\bravindra\\git\\DataDriven-and-TESTNGFrameWork\\src\\com\\testdata\\From.xlsx");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -1,7 +1,7 @@
 package datgadriven.utility;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,16 +17,11 @@ public class Parametarization {
 
 	@BeforeMethod
 	public void Setup() {
-
-		System.setProperty("webdriver.chrome.driver",
-				"C:/Users/Reddybabu/OneDrive/Documents/SeleniumDrivers/chromedriver.exe");
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--remote-allow-origins=*");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://rahulshettyacademy.com/angularpractice/");
 	}
 
@@ -69,15 +64,15 @@ public class Parametarization {
 					.getText();
 			System.out.println(successmsg);
 			
-			reader.setCellData("RegTestData", "Status", rowNum, "Pass"); // write the data in t a cell
+			reader.setCellData("RegTestData", "Status", rowNum, "Pass"); // write the data in to a cell
 
 		}
 	}
 
-//	@AfterMethod 
-//	public void Teardown() { 
-//		 driver.quit();
-//		 
-//	 }
+	@AfterMethod 
+	public void Teardown() { 
+		 driver.quit();
+		 
+	 }
 
 }

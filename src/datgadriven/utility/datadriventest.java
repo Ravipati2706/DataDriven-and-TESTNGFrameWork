@@ -1,11 +1,8 @@
 package datgadriven.utility;
-
-import java.util.concurrent.TimeUnit;
-
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -20,13 +17,13 @@ public class datadriventest {
 
 		//System.setProperty("webdriver.chrome.driver",
 				//"C:/Users/Reddybabu/OneDrive/Documents/SeleniumDrivers/chromedriver.exe");//
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--remote-allow-origins=*");
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--remote-allow-origins=*");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 	}
 
@@ -67,11 +64,11 @@ public class datadriventest {
 
 	}
 	
-	 @AfterMethod public void Teardown() { 
-		 
-		 driver.quit();
-		 
-	 }
+//	 @AfterMethod public void Teardown() { 
+//		 
+//		 driver.quit();
+//		 
+//	 }
 	
 
 }
