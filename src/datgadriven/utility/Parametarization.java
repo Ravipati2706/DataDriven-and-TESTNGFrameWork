@@ -34,8 +34,8 @@ public class Parametarization {
 	public void Formfilling() {
 		
 		/* established Excel sheet connection using xls reader class */
-		XLSReader reader = new XLSReader(
-				"C:\\Users\\Reddybabu\\eclipse-workspace\\TestNGandDatadrivenlearningbynaveen\\src\\com\\testdata\\From.xlsx");
+		ExcelReader reader = new ExcelReader(
+				"C:\\Users\\bravindra\\git\\DataDriven-and-TESTNGFrameWork\\src\\com\\testdata\\From.xlsx");
 		int rowcount = reader.getRowCount("RegTestData"); // getRowCount method will give the total no of rows which are
 															// present in the excel sheet
 		

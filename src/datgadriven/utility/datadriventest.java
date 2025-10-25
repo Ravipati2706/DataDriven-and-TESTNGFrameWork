@@ -18,8 +18,8 @@ public class datadriventest {
 	@BeforeMethod
 	public void Setup() {
 
-		System.setProperty("webdriver.chrome.driver",
-				"C:/Users/Reddybabu/OneDrive/Documents/SeleniumDrivers/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver",
+				//"C:/Users/Reddybabu/OneDrive/Documents/SeleniumDrivers/chromedriver.exe");//
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		driver = new ChromeDriver();
@@ -36,8 +36,8 @@ public class datadriventest {
 		driver.get("https://rahulshettyacademy.com/angularpractice/");
 
 		/* established Excel sheet connection using xls reader class */
-		XLSReader reader = new XLSReader(
-				"C:\\Users\\Reddybabu\\eclipse-workspace\\TestNGandDatadrivenlearningbynaveen\\src\\com\\testdata\\From.xlsx");
+		ExcelReader reader = new ExcelReader(
+				"C:\\Users\\bravindra\\git\\DataDriven-and-TESTNGFrameWork\\src\\com\\testdata\\From.xlsx");
 
 		String name = reader.getCellData("RegTestData", "Name", 2);
 		System.out.println(name);

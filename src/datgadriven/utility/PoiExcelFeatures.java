@@ -7,7 +7,7 @@ public class PoiExcelFeatures {
 	@Test
 	public void Exceloperations() {
 		
-		XLSReader reader = new XLSReader(
+		ExcelReader reader = new ExcelReader(
 				"C:\\Users\\Reddybabu\\eclipse-workspace\\TestNGandDatadrivenlearningbynaveen\\src\\com\\testdata\\From.xlsx");
 		
 		//reader.addSheet("Homepage"); // 1st approach It will add new sheet in the workbook
