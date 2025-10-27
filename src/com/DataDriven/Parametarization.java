@@ -1,4 +1,4 @@
-package datgadriven.utility;
+package com.DataDriven;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;

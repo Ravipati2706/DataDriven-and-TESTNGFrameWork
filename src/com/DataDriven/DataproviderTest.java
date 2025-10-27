@@ -1,4 +1,4 @@
-package datgadriven.utility;
+package com.DataDriven;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -64,10 +64,10 @@ public class DataproviderTest {
 		System.out.println(successmsg);
 	}
 	
-//	@AfterMethod 
-//	public void Teardown() { 
-//		 driver.quit();
-//	 
-//	 }
+	@AfterMethod 
+	public void Teardown() { 
+		 driver.quit();
+	 
+	 }
 
 }

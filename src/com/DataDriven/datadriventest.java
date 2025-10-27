@@ -1,4 +1,4 @@
-package datgadriven.utility;
+package com.DataDriven;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -64,11 +64,11 @@ public class datadriventest {
 
 	}
 	
-//	 @AfterMethod public void Teardown() { 
-//		 
-//		 driver.quit();
-//		 
-//	 }
+	 @AfterMethod public void Teardown() { 
+	 
+		 driver.quit();
+		 
+	 }
 	
 
 }

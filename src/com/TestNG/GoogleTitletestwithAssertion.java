@@ -1,4 +1,4 @@
-package com.test;
+package com.TestNG;
 
 import java.time.Duration;
 import org.openqa.selenium.By;

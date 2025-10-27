@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TestNgAutomationSuite">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestNg Automation Suite">
 	<test name="TestNG Features">
+	
 		<parameter name="env" value="QA" />
-		<parameter name="browser" value="chrome" />
-		<parameter name="url" value="https://login.yahoo.com/?.intl=in" />
-		<parameter name="emailid" value="test@yahoo.com" />
+		<parameter name="browser" value="firefox" />
+		<parameter name="url" value="https://github.com/login" />
+		<parameter name="emailid" value="ravipati2706@gmail.com" />
+		<parameter name="pswd" value="Ravi@8137" />
+		
 		<classes>
 			<!-- <class name="com.test.GoogleTest" />
 			<class name="com.test.Dependencyfeature" />
 			<class name="com.test.Testngfeatures" />
 			<class name="com.test.InvocationcountFeature" />
 			<class name="com.test.GoogleTitletestwithAssertion" />-->
-			<class name="com.test.Parametarization" />
+			<class name="com.test.TestNGParametarization" />
 			<!--<class name="datadriven.uitility.datadriventest" />-->
-
-
 		</classes>
+		
 	</test>
 </suite> 

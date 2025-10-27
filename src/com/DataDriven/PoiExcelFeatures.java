@@ -1,4 +1,4 @@
-package datgadriven.utility;
+package com.DataDriven;
 
 import org.testng.annotations.Test;
 

@@ -14,6 +14,14 @@ the string variable in the method itself
 
 Note: Each and every annotation is followed one method
 
+Data driven Approches:
+
+1.From excel file -testdata
+2.From Properties file - Env var or test data 
+3.From TestNG.xml file - Env Var
+
+these are the different kind of approches to drive the data from different resources.
+
 
 PageObjectModel is an approach to write the test cases and its a designed pattern
 
@@ -26,6 +34,32 @@ using POM we need to create a java class for each and every page  and then we ca
 and also its called as Object repository 
 
 TestBase.java it is a parent class of the all classes 
+
+
+TestNG: TestNG is nothing but Testing new generation framework. .Its a very powerfull toll Its have lot of feture and options to generate the testcases.
+
+TestNg is Opensource and its available in the form of jar files. And it is also called Java unit testing framework 
+its only applicable with java. 
+
+Advantages:
+1.Using TestNG we can generate a testcases in systamatic way
+2.It will generate very good HTML reports.
+3.It gives lot of Annotations 
+4.Priorities/sequence which means we can prioritize our testcases with sequence manner.
+5.Dependency feature available
+6.grouping feature is available
+7.important feature is @Dataprovider which means we can pass the different set of data using dataprovider feature.
+
+When write the TestNG classes we never use main method.
+
+Leftover topic
+
+>>Retry logic in TestNG
+>>Soft Assertions
+>>Screen shot for failed test cases
+>>Verbose in testng.xml
+>>TestNG with Gradle
+>>TestRail Intigration
 
 
 

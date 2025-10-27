@@ -1,4 +1,4 @@
-package com.test;
+package com.TestNG;
 
 import java.time.Duration;
 
@@ -18,6 +18,8 @@ import org.testng.annotations.Test;
 
 //Groups annotation in TestNG is nothing but it will group the testcases for a particular feature using "groups" keyword
 
+/*To get HTML reports  we need to do is we have to refresh the project and test-output folder will be created and then
+you can see index.html file over there copy the path and open in any browser.*/
 
 public class GoogleTest {
 	
