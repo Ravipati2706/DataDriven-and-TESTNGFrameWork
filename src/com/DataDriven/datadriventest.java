@@ -1,4 +1,5 @@
 package com.DataDriven;
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -9,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+
 public class datadriventest {
 
 	WebDriver driver;
@@ -16,8 +18,8 @@ public class datadriventest {
 	@BeforeMethod
 	public void Setup() {
 
-		//System.setProperty("webdriver.chrome.driver",
-				//"C:/Users/Reddybabu/OneDrive/Documents/SeleniumDrivers/chromedriver.exe");//
+		// System.setProperty("webdriver.chrome.driver",
+		// "C:/Users/Reddybabu/OneDrive/Documents/SeleniumDrivers/chromedriver.exe");//
 //		ChromeOptions options = new ChromeOptions();
 //		options.addArguments("--remote-allow-origins=*");
 		driver = new ChromeDriver();
@@ -47,7 +49,7 @@ public class datadriventest {
 		String pswd = reader.getCellData("RegTestData", "Password", 2);
 		System.out.println(pswd);
 
-		//Webdriver code
+		// Webdriver code
 		driver.findElement(By.xpath("//input[@name='name']")).sendKeys(name);
 
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys(email);
@@ -64,12 +66,12 @@ public class datadriventest {
 		System.out.println(successmsg);
 
 	}
-	
-	 @AfterMethod public void Teardown() { 
-	 
-		 driver.quit();
-		 
-	 }
-	
+
+	@AfterMethod
+	public void Teardown() {
+
+		driver.quit();
+
+	}
 
 }
